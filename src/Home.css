@@ -1,0 +1,6 @@
+img{
+    display: 1 1 0 ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 0;
+}
