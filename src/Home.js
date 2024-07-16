@@ -30,8 +30,8 @@ function Home() {
 
             <Pagination total={img.length} postPerPage={postPerPage} setcurrentPage={setcurrentPage} />
             {sliceArray.map((el) => {
-                return <div className=" card bg-dark d-flex  flex-wrap mx-3 my-3 ">
-                    <div onClick={(e) => { nav("/PopupPage") }} className=" d-flex flex-wrap ">
+                return <div className=" card bg-dark d-flex   mx-3 my-3 ">
+                    <div onClick={(e) => { nav("/PopupPage") }} className=" d-flex flex-wrap card-body  ">
                         <img onClick={(e) => { dispatch({ type: "Show", view: el }) }} className=" d-flex text-center mx-auto my-3 mx-3 w-75 h-100" src={el.url} />
                     </div>
                        <div  className="text-center my-5 mx-5  d-flex justify-content-center ">
