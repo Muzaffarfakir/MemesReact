@@ -34,9 +34,11 @@ function Home() {
                     <div onClick={(e) => { nav("/PopupPage") }} className=" d-flex flex-wrap ">
                         <img onClick={(e) => { dispatch({ type: "Show", view: el }) }} className=" d-flex text-center mx-auto my-3 mx-3 w-75 flex-wrap" src={el.url} />
                     </div>
-                    <h4 className="text-center my-3 text-light">{el.name}</h4>
-                    <button onClick={(e) => { dispatch({ type: "Save", objj: el }) }}>Save</button>
-                    <hr />
+                       <div  className="text-center my-5 mx-5  d-flex justify-content-center ">
+                        <h4 className="text-center my-3 text-light my-3 mx-3  ">{el.name}</h4>
+                        <button className="btn btn-primary" onClick={(e) => { dispatch({ type: "Save", objj: el }) }}>Save</button>
+                      
+                    </div>
                 </div>
             })}
 
